@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://box.png" type="Texture" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="Header" type="NinePatchRect"]
+anchor_right = 1.0
+margin_left = 50.0
+margin_bottom = 65.0
+texture = ExtResource( 1 )
+region_rect = Rect2( 2, 2, 28, 28 )
+patch_margin_bottom = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Profile" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -97.2395
+margin_top = 12.1647
+margin_right = -12.2395
+margin_bottom = 97.1647
+rect_min_size = Vector2( 64, 64 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_bottom = 1.0
+margin_right = 32.0
+
+[node name="Label" type="Label" parent="TextureButton"]
+anchor_top = 0.5
+anchor_right = 1.406
+anchor_bottom = 0.5
+margin_left = -0.179108
+margin_top = -22.3209
+margin_right = -30.1711
+margin_bottom = -8.32088
+rect_scale = Vector2( 3, 3 )
+text = "<"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.044
+anchor_top = 0.5
+anchor_right = 0.933
+anchor_bottom = 0.5
+margin_left = -0.0559998
+margin_top = -10.5
+margin_right = -0.391968
+margin_bottom = 3.50001
+text = "This is a long long text"
+valign = 1
